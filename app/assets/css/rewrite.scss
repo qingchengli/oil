@@ -1,0 +1,124 @@
+$--color-primary: #3ac9d6;
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+html,
+body,
+#app,
+#app>.el-container {
+  height: 100%;
+  min-height: 100%;
+}
+
+.el-main {
+  display: flex;
+  flex: 1;
+  padding: 0;
+}
+
+// material-tree dark
+// .el-tree.material-tree {
+//   .el-tree-node {
+//     &:focus>.el-tree-node__content {
+//       background: #465569;
+//     }
+//     >.el-tree-node__children {
+//       background: #324057;
+//     }
+//     .el-tree-node__content:hover {
+//       background: #465569;
+//     }
+//     &.is-current>.el-tree-node__content {
+//       background: transparent;
+//       &:hover {
+//         background: #465569;        
+//       }
+//       >.is-leaf+.el-tree-node__label {
+//         color: #76b1e8;
+//       }
+//     }
+//   }
+//   >.el-tree-node {
+//     >.el-tree-node__content {
+//       background: #465569;
+//     }
+//     &.is-current>.el-tree-node__content {
+//       background: #465569;
+//     }
+//   }
+// }
+
+// material-tree light
+.el-tree.material-tree {
+  .el-tree-node {
+    &:focus>.el-tree-node__content {
+      background: #f2f2f2;
+    }
+    >.el-tree-node__children {
+      background: #fff;
+    }
+    .el-tree-node__content:hover {
+      background: #f2f2f2;
+    }
+    &.is-current>.el-tree-node__content {
+      background: transparent;
+      &:hover {
+        background: #f2f2f2;
+      }
+      >.is-leaf+.el-tree-node__label {
+        color: #3398e6;
+      }
+    }
+  }
+  >.el-tree-node {
+    >.el-tree-node__content {
+      background: #f2f2f2;
+    }
+    &.is-current>.el-tree-node__content {
+      background: #f2f2f2;
+    }
+  }
+}
+
+.grow-tabs {
+  .el-tabs__nav-prev,
+  .el-tabs__nav-next {
+    width: 20px;
+    text-align: center;
+  }
+  .el-tabs__header {
+    flex: none;
+  }
+  .el-tabs__content {
+    display: flex;
+    align-items: stretch;
+    flex: auto;
+    width: 100%;
+    .el-tab-pane {
+      display: flex;
+      align-items: stretch;
+      flex: auto;
+      width: 100%;
+    }
+  }
+}
+
+.show-shadow {
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+}
+
+.el-table {
+  .el-button--text {
+    &.action-view-button {
+      color: #3899e5;
+    }
+    &.action-edit-button {
+      color: #1acf6a;
+    }
+    &.action-delete-button {
+      color: #fd5d5d;
+    }
+  }
+}
